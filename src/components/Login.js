@@ -6,7 +6,9 @@ import React from 'react';
 class Login extends React.Component {
     state = {
         email: null,
-        password: null 
+        password: null,
+        emailErrorMessage: null,
+        passwordErrorMessage: null 
     }
 
     /**
@@ -40,9 +42,9 @@ class Login extends React.Component {
      */
     btnHandler = (event) => {
         event.preventDefault()
-        console.log("email: ", this.state.email)
-        console.log("password: ", this.state.password)
+        
     }
+
 
     render() {
         return(
@@ -51,9 +53,15 @@ class Login extends React.Component {
                     Email: <input type='text' name='email' 
                         onChange={this.emailHandler}
                     />
+                  
+
+                    <br />
                     Password: <input type='password' name='password' 
                         onChange={this.passwordHandler}
                     />
+        
+
+                    <br />
                     <button
                         onClick={this.btnHandler}
                     >submit</button>
