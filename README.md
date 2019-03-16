@@ -1,6 +1,6 @@
-# session 5: login form data hadling
+# session 6: login form validation
 
-Date: 09/03/2019
+Date: 16/03/2019
 
 ---------------------------------------------
 
@@ -16,12 +16,26 @@ steps:
 
 4.defined email and password handlers functions to set the state
 
+```
+emailHandler = () => {}
+passwordHandler = () => {}
+```
 
 5.defined button and onClick handler of the button. 
-To just console the updated email and password from the state.
 
-5.After clicking submit button entered email and password will be consoled from the state.
+```
+btnHandler = () => {}
+```
 
+
+6.defined a validation function to validate
+
+    `fieldValidation = () => {}`
+
+in the validation function returning true/false based on the validation
+and storing custome error messages in the state's error object
+
+7.displaying the error messages to the screen.
 
 
 
