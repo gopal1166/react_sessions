@@ -1,43 +1,18 @@
-# session 6: login form validation
+# session 6: axios get 
 
-Date: 16/03/2019
+Date: 17/03/2019
 
 ---------------------------------------------
 
-steps:
+package: axios
 
-1.created a Login.js file in components folder
-
-2.Defined a Login Component
-
-3.in this defined email, password fields in the return
-
-4.defined email and password in state with initial values as null
-
-4.defined email and password handlers functions to set the state
+syntax:
 
 ```
-emailHandler = () => {}
-passwordHandler = () => {}
-```
-
-5.defined button and onClick handler of the button. 
+axios.get('url')
+.then((response) => {})
+.catch((error) => {})
 
 ```
-btnHandler = () => {}
-```
 
-
-6.defined a validation function to validate
-
-    `fieldValidation = () => {}`
-
-in the validation function returning true/false based on the validation
-and storing custome error messages in the state's error object
-
-7.displaying the error messages to the screen.
-
-
-
-
-
+url: use dummy REST API `jsonplaceholder`
