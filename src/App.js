@@ -10,11 +10,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          Hello world
+        Hello world
           <MyFunComponent />
-          <ArrowFun2 />
-
-          <MyFirstClassComponent />
+        <ArrowFun2 />
+        <MyFirstClassComponent />
       </div>
     );
   }
