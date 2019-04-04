@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import { ArrowFun2 } from './components/FirstComponent';
-
-import MyFunComponent from './components/FirstComponent';
-
-import MyFirstClassComponent from './components/ClassComponent';
+import FuncComponent from './components/FuncComponent';
+import { SecComponent } from './components/FuncComponent';
+import ClassComponent from './containers/ClassComponent';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Hello world
-          <MyFunComponent />
-        <ArrowFun2 />
-        <MyFirstClassComponent />
+        <FuncComponent />
+        <SecComponent />
+        
+        <ClassComponent />
       </div>
     );
   }

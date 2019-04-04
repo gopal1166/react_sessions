@@ -1,6 +1,6 @@
-# session 3 
+# session 2: Getting started with React
 
-Date: 09/03/2019
+Date: 04/04/2019
 
 ---------------------------------------------
 
@@ -33,6 +33,17 @@ $ cd project_name
 # To start development server
 ```
 $ npm start
+```
+
+Project folder structure:
+
+```
+	node_modules/  : to store the dependencies
+	src/			: where code resides
+		App.js		: Root component
+		index.js	: entry point (App.js is called)
+	package.json	: To list out the installed dependencies
+	.gitignore		: To ignore the node_modules while pushing to github repo
 ```
 
 
@@ -86,31 +97,20 @@ syntax:
 import React, { Component } from 'react'
 
 class ComponentName extends Component {
-
+	render() {
+			return(
+				JSX conent
+			)
+	}
 }
 ```
 
-state defining and using 
+madatory method `render()`
 
-rendering state propeties inside the return ()
+after defining the component
+import and call the component inside the App.js
 
 
-calling class component inside the fuction componet
-
-props :
-
-passing props to the child component
-accessing data using props inside the child components
-
-To access the props data
-
-in class based:
-
-	this.props.propetry
-
-in function based:
-
-	props.propety
 
 
 
